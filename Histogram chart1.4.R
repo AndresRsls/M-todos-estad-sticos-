@@ -7,6 +7,7 @@
 options(digits = 10)
 
 # CAMBIAR AQUÍ: límites de los intervalos
+#Nosotros escojemos los intervalos, agarramos todos los numeros entre 70 y 80, que eran 9, y asi 
 inferior <- c(70, 80, 85, 90, 95)
 superior <- c(80, 85, 90, 95, 110)
 
