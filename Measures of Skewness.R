@@ -1,0 +1,21 @@
+options(digits = 10)
+
+# CAMBIAR AQUÍ: datos del ejercicio
+datos <- c(1, 2, 2, 3, 4, 5, 7)
+
+# Calcular la media y la desviación estándar poblacional
+media <- mean(datos)
+desviacion <- sqrt(mean((datos - media)^2))
+
+# Calcular la moda
+frecuencias <- table(datos)
+moda <- as.numeric(names(frecuencias)[frecuencias == max(frecuencias)])
+
+# Calcular el coeficiente de asimetría de Pearson
+AP <- (media - moda[1]) / desviacion
+
+# Mostrar resultados
+cat("Mean:", media, "\n")
+cat("Mode:", moda[1], "\n")
+cat("Population standard deviation:", desviacion, "\n")
+cat("Pearson skewness coefficient:", AP, "\n")
